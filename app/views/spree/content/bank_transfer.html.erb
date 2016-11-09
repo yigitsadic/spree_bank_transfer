@@ -1,7 +1,7 @@
-<h4>HOW BANK TRANSFER WORKS</h4>
-<b>Steps:</b>
+<h4>Banka Transferi Nasıl Çalışır?</h4>
+<b>Adımlar:</b>
 <ol>
-  <li>Deposit order total in one of the below mentioned bank accounts. After this payment a payment reference number will be provided by the bank.
+  <li>Verilen hesaplardan birine tutarı yatırın. Paranızı yatırırken açıklama kısmına adınızı, tc kimlik numaranızı, telefon numaranızı havale ederken açıklama kısmına giriniz.
     <% if (banks = Spree::Bank.active).any? %>
       <div style="padding:20px 0">
       <table border="1" align='center' width="80%">
@@ -21,14 +21,13 @@
       </div>
     <% end %>
   </li>
-  <li>Enter this payment reference number on Order Details page by following steps:
+  <li>Havalenizi yaptıktan sonra Sipariş Detay sayfanıza havale referans kodunu giriniz:
     <ol style="padding:10px 0 0 20px" type='a'>
-      <li>Go to "My Account" page.</li>
-      <li>Select Order for which you want to provide details.</li>
-      <li>Click on "Add Details" link visible in "Payment Information" column.</li>
-      <li>Provide payment details and Submit.</li>
+      <li>Hesabım sayfasına giriniz.</li>
+      <li>Sipariş detayına giriniz.</li>
+      <li>Ödeme bilgisi kısmında "Transfer Bilgisi Ekle" bağlantısına tıklayınız.</li>
+      <li>Bilgilerinizi doldurup "Gönder" e tıklayınız.</li>
       <br><br>
-      <%= image_tag 'payment_details.png' %>
     </ol>
   </li>
 </ol>
